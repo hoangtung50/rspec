@@ -18,14 +18,14 @@ ActiveRecord::Schema.define(:version => 20131010080959) do
     t.string   "city"
     t.string   "state"
     t.string   "country_code"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "users", :force => true do |t|
     t.string   "full_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
